@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('checkout') {
            when {
-              branchName 'feature'
+              branch 'feature'
 	       }
            steps {
               echo"This is my first pipeline"
