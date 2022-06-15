@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh "echo SUCCESS on ${branchName}"
         }
-    }
-}
-    }
+        }
+   }
+   
 }
