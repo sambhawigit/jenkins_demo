@@ -18,6 +18,7 @@ pipeline {
 				extensions: [], 
 				userRemoteConfigs: [[credentialsId: '0636c6bf-f984-4df3-a45f-7cdeaef53994',
 				url: 'https://github.com/sambhawigit/jenkins_demo.git']]])
+				sh 'python demo.py'
             }
 	}
 		stage('checkout main') {
@@ -33,6 +34,7 @@ pipeline {
 				extensions: [], 
 				userRemoteConfigs: [[credentialsId: '0636c6bf-f984-4df3-a45f-7cdeaef53994',
 				url: 'https://github.com/sambhawigit/jenkins_demo.git']]])
+				sh 'python demo.py'
             }
 	}
 	    
