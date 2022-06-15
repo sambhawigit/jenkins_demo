@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-		branchName = "feature"
+		branchName = "main"
     }
 
     stages {
