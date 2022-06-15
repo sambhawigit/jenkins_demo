@@ -5,7 +5,7 @@ pipeline {
     }
 
     stages {
-        stage('checkout') {
+        stage('checkout feature') {
            when {
               branch 'feature'
 	   }
@@ -18,7 +18,7 @@ pipeline {
 			url: 'https://github.com/sambhawigit/jenkins_demo.git']]])
            }
 	}
-	stage('checkout') {
+	stage('checkout main') {
            when {
               branch 'main'
 	   }
