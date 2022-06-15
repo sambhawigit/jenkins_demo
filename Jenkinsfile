@@ -40,7 +40,7 @@ pipeline {
             steps {
                 sh "echo SUCCESS on ${branchName}"
 		sh "echo ${UserName}"
-		    #sss
+		
         }
         }
    }
