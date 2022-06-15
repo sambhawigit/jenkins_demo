@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('checkout') {
            when {
-              env.branchName == 'feature'
+              env.branchName 'feature'
 	   }
            steps {
               echo "This is my first pipeline"
