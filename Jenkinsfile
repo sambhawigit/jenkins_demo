@@ -3,9 +3,6 @@ pipeline {
     environment {
 		branchName = "main"
     }
-	triggers {
-		githubPush()
-    }
 
     stages {
         stage('checkout feature') {
