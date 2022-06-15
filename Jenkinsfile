@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('checkout feature') {
            when {
-              branch 'feature'
+              ${branchName} 'feature'
 	   }
            steps {
               echo "This is my first pipeline in feature branch"
@@ -20,7 +20,7 @@ pipeline {
 	}
 	stage('checkout main') {
            when {
-              branch 'main'
+              ${branchName} 'main'
 	   }
            steps {
               echo "This is my first pipeline in main branch"
