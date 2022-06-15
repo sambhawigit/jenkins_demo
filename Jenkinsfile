@@ -1,14 +1,13 @@
 pipeline {
     agent any
     environment {
-	UserName = "sambhawigit"
 	branchName = "feature"
     }
 
     stages {
         stage('checkout') {
            when {
-              env.branchName 'feature'
+              branch 'feature'
 	   }
            steps {
               echo "This is my first pipeline"
